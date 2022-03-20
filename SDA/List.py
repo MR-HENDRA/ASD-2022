@@ -55,7 +55,7 @@ list_buah.remove('Jambu')
 print(f"- List Buah (setelah jambu dihapus) : {list_buah}")
 
 # Menghapus indeks berapa pun dari item list.
-list_buah[1]
+del list_buah[1]
 print(f"- List Buah (setelah index 1 dihapus) : {list_buah}")
 
 # urutkan secara ascending

@@ -1,77 +1,62 @@
+# Isilah dengan beberapa value/nilai, kemudian tampilkan menggunakan perulangan.
+# Cobalah update salah satu value/nilai dari Collections tersebut.
+# Coba hapus salah satu value dari  Collections.
+# Coba tambahkan value ke Collections tersebut.
+
 # TIPE DATA LIST
-print("LIST".center(120,"="))
+print("LIST".center(30,"="))
 
-# list yang berisi kumpulan string
-list_buah = ['Rambutan', 'Nangka', 'Melon', 'Kelapa'] #1
-print(f"- List Buah : {list_buah}") #2
+list_random = ["Hendra Usman", "Pria", "Pangale", 18, 170.5, True]
 
-# list yang berisi kumpulan integer
-list_nilai = [75, 43, 69, 80]
-print(f"- List Nilai : {list_nilai}")
+# PERULANGAN (FOR LOOP)
+for i in list_random:
+    print(i)
 
-# list campuran berbagai tipe data
-list_jawaban = [100, 45.7, 'Hendra', True]
-print(f"- List Jawaban : {list_jawaban}")
+print("="*30)
 
-list_buah = ['Rambutan', 'Nangka', 'Melon', 'Kelapa'] #1
-print(f"- List Buah : {list_buah}")
+# PERULANGAN (WHILE LOOP)
+i = 0
+while i < len(list_random):
+    print(list_random[i])
+    i += 1
 
-# menampilkan isi tertentu dari list dengan indeks
-print(f"- Data Index [0] : {list_buah[0]}")
+print("="*30)
 
-# menampilkan isi data dari belakang
-print(f"- Data Index [-2] : {list_buah[-2]}")
+# MENGUPDATE NILAI
+list_random [4] = 172
+print(f"- List Random setelah diupdate : {list_random}")
 
-# slicing tanpa batas
-print(f"- Data Index [1:] : {list_buah[1:]}") # indeks = 1,2,3
+print("="*30)
 
-# mengubah data dalam list
-list_buah[1] = 'Anggur'
-print(f"- Mengubah Data Index [1] : {list_buah}")
+# MENGHAPUS NILAI 
 
-# menambah data di belakang list
-list_buah.append('Sirsak')
-print(f"- Menambah Data di belakang list : {list_buah}")
+# POP
+value_yang_terhapus = list_random.pop()
 
-# menambah data di awal list
-list_buah.insert(0, 'Jambu')
-print(f"- Menambah Data di awal list : {list_buah}")
+print(F"- Value yang terhapus : {value_yang_terhapus}")
+print(f"- List Random (setelah value terakhir dihapus) : {list_random}")
 
-# menambah data di index mana pun dalam list
-list_buah.insert(2, 'Manggis')
-print(f"- Menambah Data di awal list : {list_buah}")
+# REMOVE
+list_random.remove('Pria')
 
-print(f"- List Buah Terbaru : {list_buah}")
+print(f"- List Random (setelah parameter tertentu dihapus) : {list_random}")
 
-# hapus satu buah di belakang
-buah_yang_terhapus = list_buah.pop()
+# DEL
+del list_random[1]
+print(f"- List Random (setelah index tertentu dihapus) : {list_random}")
 
-print(F"- Buah yang terhapus : {buah_yang_terhapus}")
-print(f"- List Buah (setelah buah terakhir dihapus) : {list_buah}")
+print("="*30)
 
-# Menghapus data yang memiliki nilai yang sama dengan parameter
-list_buah.remove('Jambu')
+# MENAMBAHKAN NILAI
 
-print(f"- List Buah (setelah jambu dihapus) : {list_buah}")
+# APPEND
+list_random.append('Mamuju Tengah')
+print(f"- Menambah Data di belakang list : {list_random}")
 
-# Menghapus indeks berapa pun dari item list.
-del list_buah[1]
-print(f"- List Buah (setelah index 1 dihapus) : {list_buah}")
+# EXTEND
+list_random.extend([2021])
+print(f"- Menambah Data dengan Extend : {list_random}")
 
-# urutkan secara ascending
-list_buah.sort()
-print(f"- List Buah setelah diurutkan : {list_buah}")
-
-# membalikkan posisi item list (tidak harus berurut)
-list_buah.reverse()
-print(f"- List Buah setelah nilainya dibalik : {list_buah}")
-
-angka = [1, 2, 3]
-string = ['Hendra','Usman']
-campuran = [True, 4.25]
-
-listBaru = angka + string + campuran
-
-print(f"- List Baru : {listBaru}")
-
-
+# INSERT
+list_random.insert(4, 'UNSULBAR')
+print(f"- Menambah Data dengan Insert: {list_random}")

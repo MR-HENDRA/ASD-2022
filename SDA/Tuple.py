@@ -1,3 +1,5 @@
+# TUGAS COLLECTION
+
 # Isilah dengan beberapa value/nilai, kemudian tampilkan menggunakan perulangan.
 # Cobalah update salah satu value/nilai dari Collections tersebut.
 # Coba hapus salah satu value dari  Collections.
@@ -21,7 +23,14 @@ while i < len(tuple):
 
 # TUPLE BERSIFAT UNCHANGABLE (tidak bisa diubah setelah dideklarasikan)
 
+# HAL INI BERARTI ILAI DI TUPLE TIDAK BISA DI UPDATE
+
+# VALUE/NILAI TIDAK BISA DIHAPUS
+
+# VALUE BARU JUGA TIDAK BISA DITAMBAHKAN
+
 # MENGAKSES NILAI TUPLE DENGAN INDEKS
+
 jenis_kelamin = ('Pria', 'Wanita', 'Tidak ingin memberitahu')
 print(f"Jenis Kelamin : {jenis_kelamin[1]}")
 print(f"Jenis Kelamin : {jenis_kelamin[2]}")

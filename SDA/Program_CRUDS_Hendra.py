@@ -17,9 +17,6 @@
 
 7. Program dapat menampilkan index barang tertentu ''')
 
-from ssl import PEM_cert_to_DER_cert
-
-
 tampunganBarang = []
 
 # pembatas

@@ -1,6 +1,6 @@
 # PROGRAM CRUDS BARANG
 
-# LIST
+# LIST BARANG
 
 ('''
 1. Gunakan list untuk menampung barang yang diinput
@@ -29,7 +29,7 @@ def pembatas2():
 def menu():
     while True :
         pembatas()
-        print(" PROGRAM CRUDS BARANG ".center(46,"="))
+        print(" PROGRAM LIST BARANG ".center(46,"="))
         pembatas()
         print("1. Tambah Barang")
         print("2. Hapus Barang")
@@ -189,7 +189,7 @@ def cekIndeks():
             print(" MENU CEK INDEKS BARANG".center(46,'='))
             cek = input("Cek Indeks Barang  : ")
             if cek in tampunganBarang :
-                print(f"Barang Berada Pada Indeks : {tampunganBarang.index(cek)})")
+                print(f"Barang Berada Pada Indeks : {tampunganBarang.index(cek)}")
             else :
                 print(f'Barang ["{cek}"] Tidak Tersedia!')
             lanjut = input('Cek Lagi? (y/n) :').lower()
